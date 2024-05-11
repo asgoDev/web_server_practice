@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Productos</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">
+        Aplicación de productos con Programación orientada a objetos
+      </h1>
+    </header>
+    <main class="main-container">
+      <div class="form-container">
+        <form action="#" id="form" class="form">
+          <h2 class="form__title">Añadir Producto</h2>
+          <input id="name" type="text" class="form__input" placeholder="Nombre del producto" required/>
+          <input id="price" type="number" class="form__input" placeholder="Precio" required/>
+          <input id="year" type="number" class="form__input" placeholder="año de fabricación" max="2024" maxlength="4" required/>
+          <input
+            id="submit"
+            type="submit"
+            class="form__input form__input--submit"
+          />
+        </form>
+      </div>
+      <div class="list-container">
+        <table class="product-list">
+          <caption class="product-list__caption">
+            Listado de Productos
+          </caption>
+          <thead class="product-list__head">
+            <tr>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Año</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody id="product-list__tbody">
+            <tr>
+              <td>No hay productos que listar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

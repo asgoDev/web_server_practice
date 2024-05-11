@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f8f3e5;
+  /* --bg-secondary: #fa284d; */
+  --bg-secondary: #f94144;
+  /* --light-color: #b6ed34; */
+  --dark-color: #242424;
+  --single-button: #90be6d;
+  --accept-button: #b6ed34;
+  --reject-button: ;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  padding: 1rem;
+  padding-top: 0;
+  color: var(--dark-color);
+}
+
+.header {
+  padding: 1.2rem;
+  margin: 1.2rem 0;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.main-container {
+  display: flex;
+  position: relative;
+}
+
+.form-container {
+  background: var(--bg-secondary);
+
+  position: sticky;
+  top: 1rem;
+  left: 0;
+
+  flex-basis: 350px;
+  min-height: 40vh;
+  max-height: 50vh;
+}
+
+.form-container,
+.list-container {
+  padding: 2rem;
+}
+
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__title,
+.product-list__caption {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.form__title {
+  color: var(--bg);
+}
+
+.form__input {
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+  background-color: var(--bg);
+  border: none;
+}
+
+.form__input--submit {
+  margin-top: auto;
+  color: var(--bg);
+  background-color: var(--single-button);
+  cursor: pointer;
+}
+
+.list-container {
+  /* background-color: #a6f; */
+  flex-grow: 1;
+}
+
+.product-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-list__head {
+  position: sticky;
+  top: 1rem;
+
+  background: var(--bg-secondary);
+  color: var(--bg);
+  line-height: 2.4rem;
+}
+
+/* th:last-child {
+  
+} */
+
+.th-size-locked {
+  width: 1px;
+}
+
+.cell {
+  padding: 0.2rem 1rem;
+  border-bottom: 1px dotted var(--dark-color);
+}
+
+.cell--price {
+  text-align: end;
+}
+
+.cell--year {
+  text-align: center;
+}
+
+.cell--options {
+  display: flex;
+  gap: .3rem;
+}
+
+/* .cell--price, .cell--year, .cell--options {
+  width: fit-content;
+} */
+
+th {
+  width: 1px;
+}
+
+.product__option-btn {
+  padding: .1rem .5rem;
+  flex-grow: 1;
+
+}
+.product__option-btn--edit-btn {
+/* background: #deff4d; */
+}
